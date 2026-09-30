@@ -1,150 +1,31 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
 
 int main() {
     double a, b;
     char op;
 
-    cout << "Enter first number: ";
+    cout << "Enter 1st Number: ";
     cin >> a;
-
-    cout << "Enter operator (+, -, *, /): ";
+    cout << "Enter a operator: ";
     cin >> op;
-
-    cout << "Enter second number: ";
+    cout << "Enter 2nd number: "; 
     cin >> b;
 
-    switch(op) {
-        case '+':
-            cout << "Result = " << a + b;
-            break;
-
-        case '-':
-            cout << "Result = " << a - b;
-            break;
-
-        case '*':
-            cout << "Result = " << a * b;
-            break;
+    switch (op)
+    {
+        case '+': cout << a + b; break;
+        case '-': cout << a - b; break;
+        case '*': cout << a * b; break;
 
         case '/':
-            if(b != 0)
-                cout << "Result = " << a / b;
+            if(b == 0)
+                cout << "Invalid number";
             else
-                cout << "Cannot divide by zero";
+                cout << a / b;
             break;
 
         default:
             cout << "Invalid operator";
     }
-
-    return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// #include<iostream>
-// using namespace std;
-
-// int main() {
-//     double a, b;
-//     char op;
-
-//     cout << "Enter your Number: ";
-//     cin >> a >> op >> b;
-
-//     switch (op)
-//     {
-//         case '+': cout << a + b; break;
-//         case '-': cout << a - b; break;
-//         case '*': cout << a * b; break;
-
-//         case '/':
-//             if(b == 0)
-//                 cout << "Invalid number";
-//             else
-//                 cout << a / b;
-//             break;
-
-//         default:
-//             cout << "Invalid operator";
-//     }
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// #include<iostream>
-// using namespace std;
-
-// int main() {
-//     double a, b;
-//     char op;
-//     cout << "Enter your Number: \n";
-//     cin >> a >> op >> b;
-
-//     switch (op)
-//     {
-//     case "+": cout << a + b; break;
-//     case "-": cout << a - b; break;
-//     case "*": cout << a * b; break;
-//     case "/": cout << a / b; break;
-
-//         if(b == 0)
-//             cout << "Invalid number";
-//         else
-//             cout << a / b;
-//         break;
-    
-//     default:
-//         cout << "Invalid operator"
-//     }
-// }
